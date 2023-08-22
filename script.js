@@ -1,29 +1,21 @@
 // const texto = document.getElementById("apresentacao-conteudo-titulo");
+// const frase = texto.innerText;
 
-// function typeWriter(elemento){
-//     const textoOriginal = elemento.innerHTML; // Guarda o texto original com as tags
-//     elemento.innerHTML = ''; // Limpa o conteúdo atual do elemento
-//     let index = 0; // Índice para percorrer o texto
+// const letras = frase.split('');
+// console.log(letras);
 
-//     function digitarTexto() {
-//         if (index < textoOriginal.length) {
-//             if (textoOriginal[index] === '<') {
-//                 // Se encontrou uma tag, avança até o fechamento da tag
-//                 const tagFechamento = textoOriginal.indexOf('>', index) + 1;
-//                 elemento.innerHTML += textoOriginal.substring(index, tagFechamento);
-//                 index = tagFechamento;
-//             } else {
-//                 // Caso contrário, adiciona um caractere por vez
-//                 elemento.innerHTML += textoOriginal[index];
-//                 index++;
-//             }
-//             setTimeout(digitarTexto, 75); // Chama a função novamente após um intervalo
-//         }
-//     }
+// function typeWriter(letras){
+//     texto.innerText='';
+//     letras.forEach((letra) => {
+//         texto.innerText += letra;
+//         setInterval(1);
+//     })
 
-//     digitarTexto();
+
 // }
 
-// typeWriter(texto);
+// typeWriter(letras);
 
 // console.log(texto);
+
+ScrollReveal().reveal('.about', {delay: 500});

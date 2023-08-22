@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@700&display=swap');
 
 *{
     padding: 0px;
     margin: 0px;
+}
+
+:root{
+    --color-navy: #00162D;
+    --color-beige: #E8D6C0;
+    --color-smooth-white: #edf2ff;
+    --font-principal: 'Roboto Mono', monospace;
+    --font-secundaria: 'Roboto Mono', monospace;
 }
 
 body{
@@ -11,22 +20,22 @@ body{
     height: auto;
     min-height: 600px;
     background-color: #fff;
-    background-image: -webkit-linear-gradient(30deg, #E8D6C0 50%, #00162D 50%);
+    background-image: -webkit-linear-gradient(30deg, var(--color-beige) 60%,var(--color-navy)  40%);
 }
 
 .cabecalho{
     display: flex;
+    position: fixed;
     height: 6em;
+    width: 100%;
     align-items: center;
     color: #edf2ff;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 13px;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur( 3.5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    padding-left: 15rem;
-    padding-right: 15rem;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .cabecalho-titulo{
@@ -43,11 +52,11 @@ body{
     border: 2px solid black;
     justify-content: center;
     align-items: center;
-    height: 36rem;
+    height: 100vh;
     width: auto;
     padding-left: 15rem;
     padding-right: 15rem;
-    gap: 25px;
+    gap: 150px;
 }
 
 .hello-iam{
@@ -55,7 +64,7 @@ body{
 }
 
 .apresentacao-conteudo-titulo{
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--font-secundaria);
     font-size: 46px;
     font-weight: 400;
     color: black;
@@ -64,12 +73,70 @@ body{
     line-height: 34px;
 }
 
+.botao-github{
+    display: flex;
+    width: 400px;
+    height: 50px;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #00162D;
+    color: #edf2ff;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botao-github:hover{
+    transition: 0.5s;
+    opacity: 85%;
+}
+
+.botao-github img{
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
 
 .imagem-mario{
     width: 30rem;
     height: 30rem;
+    filter: invert(100%);
 }
 
 .apresentacao-conteudo{
     color:#edf2ff;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    align-items: center;
+    gap: 40px;
+    background-color: #e0c0b2;
+    padding-top: 4%;
+}
+
+.about-title{
+    font-family: var(--font-principal);
+    font-weight: 400px;
+    font-size: 40px;
+    color: var(--color-navy);
+}
+
+.about-description{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400px;
+    font-size: 23px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.footer{
+    
 }
