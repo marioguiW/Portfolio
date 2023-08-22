@@ -1,21 +1,48 @@
-// const texto = document.getElementById("apresentacao-conteudo-titulo");
-// const frase = texto.innerText;
+ScrollReveal().reveal('.about-conteudo', {delay: 300});
+ScrollReveal().reveal('.project-conteudo', {delay: 300});
+ScrollReveal().reveal('.footer-conteudo', {delay: 300});
 
-// const letras = frase.split('');
-// console.log(letras);
+const project = [
+    {
+        nome: "Monibank-Forms-Validation",
+        url: "https://marioguiw.github.io/ValidacaoDeFormulario-JS/pages/abrir-conta-form.html",
+        img: "./img/Screenshot_Monibank.jpg"
+    },
+    {
+        nome: "Crud-Bag",
+        url: "https://marioguiw.github.io/Mochila-Viagem-JS/",
+        img: "./img/Screenshot_Crud_Bag.jpg"
+    },
+    {
+        nome: "Netflix-Clone",
+        url: "https://mario-flix-js.vercel.app/",
+        img: "./img/Screenshot_Netflix-Clone.jpg"
+    },
+    {
+        nome: "Loja-Livros",
+        url: "https://loja-livros-blond.vercel.app/",
+        img: "./img/Screenshot_Loja_Livros.jpg"
+    },
+    {
+        nome: "Acerta-Numero",
+        url: "https://acerta-numeros-js.vercel.app/",
+        img: "./img/Screenshot_Acerta_Numero.jpg"
+    }
+]
 
-// function typeWriter(letras){
-//     texto.innerText='';
-//     letras.forEach((letra) => {
-//         texto.innerText += letra;
-//         setInterval(1);
-//     })
+const card = document.getElementById("card_project");
+console.log(card)
 
+function criaCard(array){
+    card.innerHTML = '';
+    project.forEach(element => {
+        card.innerHTML += `
+        <div class="card">
+            <h1 class="card-titulo">${element.nome}</h1>
+            <img class="card-imagem" src="${element.img}">
+        </div>
+            `
+    });
+}
 
-// }
-
-// typeWriter(letras);
-
-// console.log(texto);
-
-ScrollReveal().reveal('.about', {delay: 500});
+criaCard(card);
