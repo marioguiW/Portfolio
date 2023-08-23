@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -21,6 +26,10 @@ body{
     min-height: 600px;
     background-color: #fff;
     background-image: -webkit-linear-gradient(30deg, var(--color-beige) 67%,var(--color-navy)  40%);
+}
+
+a{
+    text-decoration: none;
 }
 
 .cabecalho{
@@ -50,6 +59,16 @@ body{
     margin-right: 32vh;
 }
 
+.navbar h2{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .navbar h2:hover{
     transition: all 0.4s;
     color: #fff;
@@ -68,14 +87,15 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-left: 32vh;
-    margin-right: 32vh;
+    margin-left: 15%;
+    margin-right: 15%;
     align-items: center;
 }
 
 .hello-iam{
     font-size: 1.563rem;
 }
+
 
 .apresentacao-conteudo-titulo{
     font-family: var(--font-secundaria);
@@ -101,6 +121,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 10px;
+    text-decoration: none;
 }
 
 .botao-github:hover{
@@ -116,9 +137,9 @@ body{
 
 
 .imagem-mario{
-    width: 50vh;
-    height: 50vh;
-    filter: invert(100%);
+    width: 60%;
+    height: 60%;
+    padding-left: 5%;
 }
 
 .apresentacao-conteudo{
@@ -231,7 +252,7 @@ body{
 .footer{
     display: flex;
     background-color: #070f18;
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     justify-content: center;
 }
@@ -254,7 +275,41 @@ body{
 
 .footer-contatos{
     display: flex;
-    gap: 80px;
+    gap: 20vh;
 
+}
+
+.footer-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.6s;
+}
+
+.footer-contato:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+}
+
+.footer-contato img{
+    height: 80px;
+    width: 80px;
+}
+
+.footer-github-logo{
+    filter: invert(100%);
+}
+
+.footer-contato h3{
+    font-family: var(--font-principal);
+    color: #edf2ff;
+    font-size: 25px;
+}
+
+.footer-contato p{
+    font-family: var(--font-principal);
+    color: gray;
+    font-size: 13px;
 }
 

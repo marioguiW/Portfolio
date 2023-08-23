@@ -12,15 +12,15 @@
         <div class="cabecalho">
             <h1 class="cabecalho-titulo">Portfólio</h1>
             <div class="navbar">
-                <h2>Início</h2>
-                <h2>Sobre mim</h2>
-                <h2>Projetos</h2>
-                <h2>Contatos</h2>
+                <h2><a href="#inicio">Início</a></h2>
+                <h2><a href="#about">Sobre mim</a></h2>
+                <h2><a href="#projects">Projetos</a></h2>
+                <h2><a href="#contatos">Contatos</a></h2>
             </div>
         </div>
     </header>
     <main>
-        <div class="apresentacao">
+        <div id="inicio" class="apresentacao">
             <div class="apresentacao-imagem-texto">
                 <div class="apresentacao-conteudo">
                     <div class="apresentacao-conteudo-titulo" id="apresentacao-conteudo-titulo">
@@ -28,22 +28,22 @@
                         <span class="typed-text">Mario Wilhelms.</span> <br>
                         <span class="hello-iam">Desenvolvedor Front-end</span>
                     </div>
-                    <button class="botao-github"><img src="img/github-logo.png" alt=""> Github</button>
+                    <a target="_blank" href="https://github.com/marioguiW"><button class="botao-github"><img src="img/github-logo.png" alt=""> Github</button></a>
                 </div>  
-                <img src="./img/—Pngtree—vector avatar icon_4013749.png" alt="" class="imagem-mario">
+                <img src="./img/eu.png" alt="" class="imagem-mario">
             </div>
         </div>
-        <div class="about">
+        <div id="about" class="about">
             <div class="about-conteudo">
                 <h1 class="about-title">Sobre mim</h1>
                 <div class="about-description">
                     <h3>
-                        Desenvolvedor Front-end com destaque em JavaScript, HTML5, CSS3, Styled Components e Material UI, além do consumo eficiente de APIs REST. Apaixonado pelo desenvolvimento e linguagens de programação. Atualmente, cursando Engenharia de Software no Biopark e buscando constantemente aprimorar minhas habilidades através de cursos extra-curriculares.
+                        Desenvolvedor Front-end com destaque em JavaScript, React, Styled Components e Material UI, além do consumo eficiente de APIs. Apaixonado pelo desenvolvimento e linguagens de programação. Atualmente, cursando Engenharia de Software no Biopark e buscando constantemente aprimorar minhas habilidades através de cursos extra-curriculares.
                     </h3>
                 </div>
             </div>
         </div>
-        <div class="project">
+        <div id="projects" class="project">
             <div class="project-conteudo">
                 <h1 class="project-title">Projetos</h1>
                 <div class="card-project" id="card_project">
@@ -53,27 +53,27 @@
         </div>
     </main>
     <footer>
-        <div class="footer">
+        <div id="contatos" class="footer">
             <div class="footer-conteudo">
                 <h2 class="footer-title">Contatos</h2>
                 <div class="footer-contatos">
                     <div class="footer-contato">
-                        <img src="" alt="">
+                        <a target="_blank" href=""><img src="./img/mail.png" href="facebook.com.br" alt=""></a>
                         <h3>Email</h3>
                         <p>marioguilhermew@gmail.com</p>
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="footer-contato">
+                        <a target="_blank"  href="https://api.whatsapp.com/send?phone=5545998480797&text=Olá!"><img src="./img/whatsapp.png" alt=""></a>
                         <h3>Telefone</h3>
                         <p>(45) 9 9848-0797</p>
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="footer-contato">
+                        <a target="_blank" href="https://www.linkedin.com/in/mario-wilhelms-536572274/"><img src="./img/linkedin.png " alt=""></a>
                         <h3>Linkedin</h3>
-                        <p></p>
+                        <p>Mario Wilhelms</p>
                     </div>
-                    <div>
-                        <img src="" alt="">
+                    <div class="footer-contato">
+                        <a target="_blank" href="https://github.com/marioguiW"><img class="footer-github-logo" src="./img/github-logo.png" alt=""></a>
                         <h3>Github</h3>
                         <p>@marioguiW</p>
                     </div>

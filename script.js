@@ -39,7 +39,7 @@ function criaCard(array){
         card.innerHTML += `
         <div class="card">
             <h1 class="card-titulo">${element.nome}</h1>
-            <img class="card-imagem" src="${element.img}">
+            <a target="_blank" href="${element.url}"><img class="card-imagem" src="${element.img}"></a>
         </div>
             `
     });
