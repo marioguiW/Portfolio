@@ -32,6 +32,11 @@ const project = [
         nome: "Calculadora",
         url: "https://calculadora-js-peach.vercel.app/",
         img: "./img/Screenshot_Calculadora.jpeg"
+    },
+    {
+        nome: "Cria Card",
+        url: "https://cria-card-react.vercel.app/",
+        img: "./img/Screenshot_CriaCard.jpg"
     }
 ]
 
