@@ -25,7 +25,7 @@ body{
     height: auto;
     min-height: 600px;
     background-color: #fff;
-    background-image: -webkit-linear-gradient(30deg, var(--color-beige) 67%,var(--color-navy)  40%);
+    background-image: -webkit-linear-gradient(30deg, var(--color-beige) 70%,var(--color-navy)  40%);
 }
 
 a{
@@ -93,13 +93,16 @@ a{
 }
 
 .hello-iam{
-    font-size: 1.563rem;
+    font-size: 1.3rem;
+}
+
+.typed-text{
+    font-size: 2.5em;
 }
 
 
 .apresentacao-conteudo-titulo{
     font-family: var(--font-secundaria);
-    font-size: 2.875rem;
     font-weight: 400;
     color: black;
     width: 450px;
@@ -109,7 +112,7 @@ a{
 
 .botao-github{
     display: flex;
-    width: 400px;
+    width: 80%;
     height: 50px;
     border: none;
     font-family: 'Ubuntu', sans-serif;
@@ -136,9 +139,14 @@ a{
 
 
 .imagem-mario{
-    width: 60%;
-    height: 60%;
-    padding-left: 5%;
+    height: 100%;
+}
+
+.imagem-mario img{
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    height: auto;
 }
 
 .apresentacao-conteudo{
